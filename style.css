@@ -45,6 +45,10 @@ body {
     
 }
 
+.border-left{
+    border-left: var(--border-bottom);
+}
+
 .get-barky-free {
     background-color: var(--darkest); 
     color: var(--lightest) !important; 
@@ -68,19 +72,20 @@ body {
 #logo {
     width: 100px;
     height: auto;
-    margin-left: 10px;
 }
+
 
 nav {
     display: flex;
     top: 0;
     position: sticky;
-    width: 100%;
+    width: calc(100% - 20px);
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
     background-color: var(--main-bg);
     font-size: var(--font-15);
+    margin: 0 auto;
     
 }
 
@@ -123,6 +128,10 @@ nav {
 
     .nav-btn {
         display: none;
+    }
+
+    #nav-right .get-barky-free {
+        display: inline-block;
     }
 
     #hamburger {
