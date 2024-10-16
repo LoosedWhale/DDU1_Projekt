@@ -121,6 +121,68 @@ nav {
 }
 
 
+/*Footer*/
+
+footer {
+    background-color: var(--lightest);
+    color: var(--darkest);
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 150px;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media-icons img {
+    width: 25px;
+    height: auto;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    display: block;
+    color: var(--darkest);
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: var(--font-12);
+}
+
 @media (min-width: 600px) and (max-width: 1080px){
     body {
         background-color: blue;
