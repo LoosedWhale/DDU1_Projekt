@@ -3,8 +3,8 @@
     src: url('fonts/Inter.ttf');
 }
 
-body {
-    margin: 0;
+*{
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     --darkest: #050505;
     --darker: #121212;
@@ -14,6 +14,7 @@ body {
     --light: #999999;
     --lighter: #e5e5e5;
     --lightest: #f4f4f4;
+    --main-bg: #fff;
     --blue: #087fe7;
     --light-shadow: rgba(0, 0, 0, 0.1);
     --dark-shadow: rgba(0, 0, 0, 0.2);
@@ -28,4 +29,97 @@ body {
     --font-13-5: 13.5px;
     --font-13: 13px;
     --font-12: 12px;
+    --border-bottom: 2px solid var(--lightest);
 }
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    
+}
+
+.border-bottom{
+    border-bottom: var(--border-bottom);
+    
+}
+
+
+/*Nav*/
+
+#hamburger {
+    display: none;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: var(--main-bg);
+    font-size: var(--font-15);
+    
+}
+
+.nav-left, .nav-right {
+    gap: 10px;
+}
+
+.nav-btn{
+    justify-self: center;
+    padding: 7px;
+    margin: 5px;
+    text-decoration: none;
+    color: var(--darkest);
+    font-size: var(--font-13-5);
+    border-radius: 5px;
+    font-weight: 450;
+}
+
+.nav-btn:hover{
+    background-color: var(--lightest);
+}
+
+
+@media (min-width: 600px) and (max-width: 1080px){
+    body {
+        background-color: blue;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    #hamburger {
+        width: 40px;
+        height: auto;
+        display: block;
+        padding: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .nav-btn {
+        display: none;
+    }
+
+    #hamburger {
+        width: 40px;
+        height: auto;
+        display: block;
+        padding: 10px;
+        margin-right: 10px;
+
+    }
+}
+
