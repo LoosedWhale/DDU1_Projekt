@@ -250,7 +250,7 @@ main {
 }
 
 
-#feature-container #feature-descripton, h2, .get-barky-free{
+#feature-container > #feature-descripton h2 .get-barky-free{
     text-align: center;
 }
 
@@ -281,6 +281,43 @@ main {
 .feature img {
     width: 25px;
     height: auto;
+}
+
+/*Cta*/
+
+#cta-container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+#cta-first-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#cta-second-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#cta-second-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#cta-text-left{
+    text-align: left;
+}
+
+#cta-third-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 
@@ -373,6 +410,16 @@ footer {
         width: 50%;
     }
 
+    #cta-first-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #cta-third-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .footer-container {
         display: grid; 
         grid-template-columns: 1fr 1fr; 
@@ -458,4 +505,9 @@ footer {
         max-width: 90%;
         margin: 0 auto;
     }
+
+    #cta-first-box, #cta-second-box, #cta-third-box {
+        grid-template-columns: 1fr;
+    }
+    
 }
