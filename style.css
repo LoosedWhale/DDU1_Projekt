@@ -633,6 +633,7 @@ footer {
 
     nav {
         border-bottom: none;
+        position: static;
     }
 
     .hero img {
